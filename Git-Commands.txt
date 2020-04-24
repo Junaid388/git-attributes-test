@@ -1,0 +1,69 @@
+Git Configuration
+
+Configuration is primarily found in three levels:
+
+- Repo (local)
+- User account (global)
+- Git installation (system)
+
+
+#Local (repository)
+git config —local user.name “Junaid388”
+
+# Global (user directory)
+git config —global user.name “Junaid”
+
+# System (git installation)
+git config —system user.name “Junaid”   
+
+
+
+#show all config values and the file where they are defined
+git config —list —show-origin 
+
+# show the current user.name config value (sub and key)
+git config user.name
+
+
+#Remove a specific setting for a specific level of config
+git config —global —unset user.name
+
+#Edit a specific level of config directly
+git config —global edit #will open in default editor
+
+#Remove a section of config for a specific level
+git config —global —remove-section user
+
+# Setting default editor
+git config —local core.editor “code —new-window —wait” 
+
+
+# To see the difference of files
+git difftool
+
+git merge tool
+
+# Checkout at branch
+git checkout -b develop    # git checkout master
+
+# commit the changes to a branch
+git commit -m “comment.”     
+
+#merging the current repo with the specified repo
+git merge develop  
+
+#Setting alias
+git config —global alias.st status 
+
+
+ #Define attributes setting
+git config --global diff.exif.textconv exiftool
+
+#smude the sensitive data
+git config --local filter.updateAPIKey.smudge ‘sed “s/{SECURE_API_KEY}/a1693afecca123/“‘
+
+#clean the sensitive data
+git config --local filter.updateAPIKey.clean ‘sed “s/a1693afecca123/{SECURE_API_KEY}/“‘
+
+# the above changes will be reflected once we made changes in .gitignore
+*.js  filter=updateAPIKey
