@@ -1,5 +1,6 @@
 // Sample JS File
-const API_KEY = "a1693afecca123"
+// Key should be hidden
+const API_KEY = "{SECURE_API_KEY}"
 const makeAPIcall = function (key){
 	console.log("Making API call...");
 }
