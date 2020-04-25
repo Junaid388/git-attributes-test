@@ -67,3 +67,38 @@ git config --local filter.updateAPIKey.clean ‘sed “s/a1693afecca123/{SECURE_
 
 # the above changes will be reflected once we made changes in .gitignore
 *.js  filter=updateAPIKey
+
+# Adding a submodule
+
+# Adds a submodule to the repo in the 'external/repo1' directory 
+git submodule add https://github.com/junaid388/exmple-submodule.git external/repo1 
+
+# Cloning a Repository with submodules 
+
+# Clone the repository
+git clone https://github.com/junaid388/my-repo.git
+
+# Initialize submodules
+git submodule init
+
+# Grab the content of the submodules
+git submodule update  
+
+# Removing a submodule from a repository
+
+# Temporarily remove the repository
+git submodule deist external/repo1
+
+# Permanently remove the repository
+git submodule deist external/repo1
+git rm external/repo1
+git commit -m "Removed project submodule repo1"
+
+#Verrsion
+
+git --version 
+
+# To get the info of submodules
+git config --global status.submoduleSummary true
+
+  

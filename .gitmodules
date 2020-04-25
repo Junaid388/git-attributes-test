@@ -1,0 +1,3 @@
+[submodule "external/git-attributes-test"]
+	path = external/git-attributes-test
+	url = https://github.com/Junaid388/git-attributes-test.git
