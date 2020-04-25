@@ -87,10 +87,10 @@ git submodule update
 # Removing a submodule from a repository
 
 # Temporarily remove the repository
-git submodule deist external/repo1
+git submodule deinit external/repo1
 
 # Permanently remove the repository
-git submodule deist external/repo1
+git submodule deinit external/repo1
 git rm external/repo1
 git commit -m "Removed project submodule repo1"
 
@@ -101,4 +101,9 @@ git --version
 # To get the info of submodules
 git config --global status.submoduleSummary true
 
-  
+git config --global diff.submodule log  
+
+git submodule init
+git submodule update
+
+git fetch    
