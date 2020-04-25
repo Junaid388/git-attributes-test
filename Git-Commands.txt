@@ -132,4 +132,23 @@ Source ~/.zshrc
 
 You can run the script by
 git commonad-name  
+
+
+Git Bisect
+A tool included with Git that enables you to specify a start and end commit and either manually or automatically determine the point of failure within that range of commits.
+
+# Start the biscuit process
+git bisect start
+
+# Specify good and bad commits
+git bisect good cd93e60
+git bisect bad b7cd593   
+
+git bisect bad # continue from start to end one by one 
+
+git show # to show the bad committed file 
+
+git bisect reset
+
+git log --pretty=oneline  
  
