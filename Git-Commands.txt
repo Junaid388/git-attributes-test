@@ -107,3 +107,22 @@ git submodule init
 git submodule update
 
 git fetch    
+
+
+# add all submodules
+git clone --recursive https:github.com/junaid388/repo.git repo1
+
+# Git hooks
+
+A pre-defined script that is executed in response to a specific action that has occurred within your Git repository.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+|	Client-side Hooks						|			Server-side Hooks				|
+-------------------------------------------------------------------------------------------------------------------------------------------------
+|Commit Initiated				Commit			|				Repository Updated			|
+|		pre-commit	prepare-commit	commit	post-commit	PUSH	pre-receive	update				post-receive	|
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+ 
