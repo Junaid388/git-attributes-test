@@ -123,6 +123,13 @@ A pre-defined script that is executed in response to a specific action that has 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# create a custom git command
+# create a file with your command name
+Insert the script you want to run once you run the command
 
+echo 'export PATH="Users/junaid/git-scripts:$PATH"' >> ~/.zshrx or bash profile
+Source ~/.zshrc
 
+You can run the script by
+git commonad-name  
  
